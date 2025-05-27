@@ -2,7 +2,7 @@ from models import session
 from helper import *
 
 def debug():
-    # Example test code
+  
     print("All Conservationists:")
     print(get_all_conservationists())
     
