@@ -1,6 +1,6 @@
 from models import session, Conservationist, Animal, Habitat
 
-# CRUD operations for Conservationists
+
 def create_conservationist(name, email):
     conservationist = Conservationist(name=name, email=email)
     session.add(conservationist)
@@ -13,7 +13,7 @@ def get_all_conservationists():
 def find_conservationist_by_id(id):
     return session.query(Conservationist).filter(Conservationist.id == id).first()
 
-# CRUD operations for Animals
+
 def create_animal(name, species, status, conservationist_id):
     animal = Animal(
         name=name,
@@ -28,7 +28,7 @@ def create_animal(name, species, status, conservationist_id):
 def get_all_animals():
     return session.query(Animal).all()
 
-# CRUD operations for Habitats
+
 def create_habitat(name, habitat_type):
     habitat = Habitat(name=name, habitat_type=habitat_type)
     session.add(habitat)
