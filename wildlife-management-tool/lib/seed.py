@@ -14,7 +14,7 @@ def seed_database():
     for habitat in habitats:
         create_habitat(habitat, fake.word())
     
-    # Create animals
+    
     species = ['Tiger', 'Elephant', 'Panda', 'Sea Turtle']
     statuses = ['Endangered', 'Critically Endangered', 'Vulnerable']
     conservationists = get_all_conservationists()
