@@ -6,7 +6,7 @@ engine = create_engine('sqlite:///wildlife.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Association table for many-to-many relationship
+
 animal_habitat = Table(
     'animal_habitats',
     Base.metadata,
