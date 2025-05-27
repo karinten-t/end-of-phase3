@@ -5,11 +5,11 @@ from models import session
 fake = Faker()
 
 def seed_database():
-    # Create conservationists
+    
     for _ in range(5):
         create_conservationist(fake.name(), fake.email())
     
-    # Create habitats
+    
     habitats = ['Rainforest', 'Savanna', 'Coral Reef', 'Wetland']
     for habitat in habitats:
         create_habitat(habitat, fake.word())
