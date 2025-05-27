@@ -27,7 +27,7 @@ def seed_database():
             conservationist_id=fake.random.choice(conservationists).id
         )
     
-    # Associate animals with habitats
+    
     animals = get_all_animals()
     habitats = session.query(Habitat).all()
     
